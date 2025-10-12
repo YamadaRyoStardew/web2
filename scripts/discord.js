@@ -1,0 +1,12 @@
+const redirects = {
+  "/github": "https://github.com/nguyencaoantuong",
+  "/discord": "https://discord.com/users/1375400484738957363",
+  "/telegram": "https://t.me/mbbpatch2_chat",
+  "/twitter": "https://x.com/_kitamurashu",
+  "/gitea": "http://ncatt.ddns.net:3000"
+};
+
+const path = window.location.pathname;
+if (redirects[path]) {
+  window.location.replace(redirects[path]);
+}
